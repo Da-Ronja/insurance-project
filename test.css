@@ -1,10 +1,11 @@
 body{
     max-width: 1440px;
     margin: auto; 
+    background-color: #E5E5E5;
 }
 .wrapperOne {
     width: 90%;
-
+    margin: auto; 
 }
 .griden{
     display: grid;
@@ -18,7 +19,6 @@ body{
 .blueSky {
     display: grid;
     padding: 5px;
-    background: #C7DDEA;
     grid-column: 1;
     grid-row: 1/span 2;
 }
@@ -26,8 +26,7 @@ body{
 .blueSky h1{
     width: 343px;
     height: 101px;
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
+
     font-weight: 900;
     font-size: 45px;
     line-height: 100%;
@@ -39,8 +38,6 @@ body{
     width: 343px;
     height: 103px;
     
-    font-family: Fira Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -57,26 +54,25 @@ body{
     width: 131px;
     height: 39px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.8);
 }
   
-
-
 .red {
     display: grid;
-    background-color: #F17949;
     height: 300px;
     justify-content: center;
 }
 
 .red p{
-    font-family: Fira Sans;
-    font-style: normal;
+
     font-weight: bold;
     font-size: 11px;
     line-height: 13px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.5);
@@ -84,8 +80,7 @@ body{
 }
 
 .red h2{
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
+
     color: #FFFFFF;
     font-size: 32px;
     letter-spacing: -0.02em;
@@ -106,19 +101,17 @@ nav a {
 
 .yellow {
     display: grid ;
-    background-color: #FAB131;
     height: 300px;
     justify-content: center;
 }
 
 .yellow p{
-    font-family: Fira Sans;
-    font-style: normal;
+
     font-weight: bold;
     font-size: 11px;
     line-height: 13px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.5);
@@ -126,8 +119,7 @@ nav a {
 }
 
 .yellow h2{
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
+
     color: #FFFFFF;
     font-size: 32px;
     letter-spacing: -0.02em;
@@ -145,7 +137,14 @@ nav a {
 .lightGrey div {
     justify-content: center;
 }
+.lightGrey a {
 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: rgba(0,0,0,0.7);
+}
 .darkGrey {
     background-color: #777574;
     height: 300px;
@@ -160,7 +159,7 @@ img {
     max-height: 300px;
     justify-self: end;
 }
-            /*          Main            */
+
     /*  Färgschema  */
 
 .colorBlue {
@@ -187,32 +186,9 @@ background-color: #F17949;
     background-color: #ffffff;
 }
 
-        /*      Font        */
-    
-p {
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 18px;
-}
 
-h1 {
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-}
-
-h2{
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -0.02em;    
-}
-h3{
-    font-size: 16px;
-    line-height: 20px;
-}
     
-        /*      KOD         */
+    /*          Main            */
 
 .gridenTwo {
     display: inline-grid;
@@ -221,6 +197,26 @@ h3{
 
 .top {
     align-items: center;
+    padding: 0 0.9em 0 0.9em;
+}
+.topheader h2 {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: left;
+    color: #ffffff;
+}
+.topheader p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    max-width: 240px;
+    min-width: 210px;
+    border-radius: 5px;
+    margin: 15px;
 }
 
 .figurer {
@@ -238,43 +234,56 @@ h3{
     object-fit: cover;
     object-position: 0px 30px;    
 }
-.container {
-    max-width: 240px;
-    min-width: 210px;
-    border-radius: 5px;
-    margin: 15px;
+figcaption h3{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.9);
 }
-    
-.button {
-    background-color: white;
-    width: 131px;
-    height: 39px;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
+figcaption p{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
 }
-.hidden {
-    display: none;
+.aboutText h2 {
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+}
+.aboutText p{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .listwrap{
     display: grid;
     align-self: stretch;
-
 }
 .list {
     min-height: 170px;
 }
-
+.list h2 {
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.8);
+}
 .list h3 {
     margin: 35px 0 0 35px;
     font-size: 35px;
+    line-height: 35px;
     text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+}
+.list p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.hidden {
+    display: none;
 }
 
 
 @media only screen and (min-width: 768px){
     .griden{
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -330,15 +339,9 @@ h3{
     .topheader
     {
         grid-column: 2/3;
-        font-size: 45px;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
     }
     .top p {
         grid-column: 3/4;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.6);
     }
     .figurer {
         grid-column: 1/ span 2;
@@ -354,7 +357,7 @@ h3{
         grid-template-columns: 0.5fr 50%.0.5fr;
         grid-template-rows: 20% 1fr;
     }
-    .about1 {
+    .aboutText {
         grid-column: 2;
         grid-row: 2;
     }

@@ -1,0 +1,371 @@
+body{
+    max-width: 1440px;
+    margin: auto; 
+    background-color: #E5E5E5;
+}
+.wrapperOne {
+    width: 90%;
+    margin: auto; 
+}
+.griden{
+    display: grid;
+}
+
+.blueSkyTop{
+    display: grid;
+    justify-content: center;
+}
+
+.blueSky {
+    display: grid;
+    padding: 5px;
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+
+.blueSky h1{
+    width: 343px;
+    height: 101px;
+
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.blueSky p{  
+    width: 343px;
+    height: 103px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 3rem;
+    width: 131px;
+    height: 39px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.8);
+}
+  
+.red {
+    display: grid;
+    height: 300px;
+    justify-content: center;
+}
+
+.red p{
+
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.red h2{
+
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+}
+
+
+nav  {
+    display: none;
+}
+
+nav a {
+    list-style: none;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.yellow {
+    display: grid ;
+    height: 300px;
+    justify-content: center;
+}
+
+.yellow p{
+
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.yellow h2{
+
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+}
+
+/* css för footer nedan */
+
+.lightGrey{
+    
+    background-color:#A9A19E;
+    text-align: center;
+    display: none;
+}
+
+.lightGrey div {
+    justify-content: center;
+}
+.lightGrey a {
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: rgba(0,0,0,0.7);
+}
+.darkGrey {
+    background-color: #777574;
+    height: 300px;
+}
+
+.familj {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-height: 300px;
+    justify-self: end;
+}
+
+    /*  Färgschema  */
+
+.colorBlue {
+    background-color: #C7DDEA;
+}
+
+.colorYellow {
+    background-color: #FAB131;
+}
+
+.colorOrange {
+background-color: #F17949;
+}
+
+.colorDarkGrey {
+    background-color: #A9A19E;
+}
+
+.colorGrey {
+    background-color: #EBEBEB;;
+}
+
+.colorWhite {
+    background-color: #ffffff;
+}
+
+
+    
+    /*          Main            */
+
+.gridenTwo {
+    display: inline-grid;
+    text-align: center;
+}
+
+.top {
+    align-items: center;
+    padding: 0 0.9em 0 0.9em;
+}
+.topheader h2 {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: left;
+    color: #ffffff;
+}
+.topheader p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    max-width: 240px;
+    min-width: 210px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.figurer {
+    display: grid;
+    justify-content: center;
+}
+    
+.figurer img {
+    box-sizing: border-box;
+    width: 200px;
+    height: 140px;
+    border-radius: 5px;
+    margin-top: -15px;
+    padding: 0 26% 0 26%;
+    object-fit: cover;
+    object-position: 0px 30px;    
+}
+figcaption h3{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.9);
+}
+figcaption p{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.aboutText h2 {
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+}
+.aboutText p{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.listwrap{
+    display: grid;
+    align-self: stretch;
+}
+.list {
+    min-height: 170px;
+}
+.list h2 {
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.list h3 {
+    margin: 35px 0 0 35px;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+}
+.list p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px){
+    .griden{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .blueSky {
+        grid-column: 1;
+        grid-row: 1/span 2;
+         
+    }
+    .red {
+        grid-column:  2;
+        grid-row: span 1;
+        height: unset;
+    }
+
+    .yellow {
+        grid-column: 2;
+        grid-row: 2;
+        height: unset;
+    }
+
+    nav  {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .lightGrey{
+        
+        background-color:#A9A19E;
+        text-align: center;
+        display: block;
+
+    }
+
+    /*Main*/
+    .gridenTwo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+    }
+
+    .hidden {
+        display: unset;
+    }
+
+    .top {
+        grid-column: 1 / span 2;
+        grid-row: 1/ span 2;
+        display: grid;
+        grid-template-columns: 0.5fr 40% 40%.0.5fr;
+        grid-template-rows: 1fr 0.5fr;
+        text-align: start;
+    }
+    .topheader
+    {
+        grid-column: 2/3;
+    }
+    .top p {
+        grid-column: 3/4;
+    }
+    .figurer {
+        grid-column: 1/ span 2;
+        grid-row: 2/ 4;
+        z-index: 2;
+        background-color: unset;
+        grid-auto-flow: column;
+    }
+    .about {
+        grid-column: 1/ span 2;
+        grid-row: 3/ span 4;
+        display: grid;
+        grid-template-columns: 0.5fr 50%.0.5fr;
+        grid-template-rows: 20% 1fr;
+    }
+    .aboutText {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .listwrap {
+        grid-column: 1/ span 2;
+        grid-row: 5;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

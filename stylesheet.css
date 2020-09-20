@@ -1,47 +1,40 @@
-body{
+body {
     max-width: 1440px;
     margin: auto; 
     background-color: #E5E5E5;
 }
-.wrapperOne {
-    width: 90%;
-    margin: auto; 
-}
-.griden{
-    display: grid;
-}
+.wrapper {
 
-.blueSkyTop{
-    display: grid;
-    justify-content: center;
+    min-width: 353px;
+}
+/*  Återanvändbara  */
+
+.cBlue {
+    background-color: #C7DDEA;
 }
 
-.blueSky {
-    display: grid;
-    padding: 5px;
-    grid-column: 1;
-    grid-row: 1/span 2;
+.cYellow {
+    background-color: #FAB131;
 }
 
-.blueSky h1{
-    width: 343px;
-    height: 101px;
-
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #000000;
+.cOrange {
+    background-color: #F17949;
 }
 
-.blueSky p{  
-    width: 343px;
-    height: 103px;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 0.6); 
+.cDarkGrey {
+    background-color: #A9A19E;
+}
+
+.cGrey {
+    background-color: #EBEBEB;;
+}
+
+.cWhite {
+    background-color: #ffffff;
+}
+
+.pW {
+    color: #FFFFFF;
 }
 
 .button{
@@ -59,14 +52,54 @@ body{
     line-height: 12px;
     color: rgba(0, 0, 0, 0.8);
 }
-  
-.red {
+
+.hidden {
+    display: none;
+}
+
+/*  Header    */
+
+.headerGrid{
+    display: grid;
+}
+
+.headerBlue {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+.headerBlueText{
+    display: grid;
+    justify-content: center;
+}
+
+.headerBlueText h1{
+    width: 343px;
+    height: 101px;
+
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+.headerBlueText p{  
+    width: 343px;
+    height: 103px;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6); 
+}
+.familj {
+    max-height: 300px;
+    justify-self: end;
+}
+
+.headerBox {
     display: grid;
     height: 300px;
     justify-content: center;
 }
-
-.red p{
+.headerBox p{
 
     font-weight: bold;
     font-size: 11px;
@@ -79,16 +112,9 @@ body{
     justify-content: center;
 }
 
-.red h2{
-
-    color: #FFFFFF;
+.headerBox h2{
     font-size: 32px;
     letter-spacing: -0.02em;
-}
-
-
-nav  {
-    display: none;
 }
 
 nav a {
@@ -99,132 +125,39 @@ nav a {
     text-decoration: none;
 }
 
-.yellow {
-    display: grid ;
-    height: 300px;
-    justify-content: center;
-}
+/*  Main    */
 
-.yellow p{
-
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 13px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-}
-
-.yellow h2{
-
-    color: #FFFFFF;
-    font-size: 32px;
-    letter-spacing: -0.02em;
-}
-
-/* css för footer nedan */
-
-.lightGrey{
-    
-    background-color:#A9A19E;
-    text-align: center;
-    display: none;
-}
-
-.lightGrey div {
-    justify-content: center;
-}
-.lightGrey a {
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-
-    color: rgba(0,0,0,0.7);
-}
-.darkGrey {
-    background-color: #777574;
-    height: 300px;
-}
-
-.familj {
-    display: flex;
-    justify-content: center;
-}
-
-img {
-    max-height: 300px;
-    justify-self: end;
-}
-
-    /*  Färgschema  */
-
-.colorBlue {
-    background-color: #C7DDEA;
-}
-
-.colorYellow {
-    background-color: #FAB131;
-}
-
-.colorOrange {
-background-color: #F17949;
-}
-
-.colorDarkGrey {
-    background-color: #A9A19E;
-}
-
-.colorGrey {
-    background-color: #EBEBEB;;
-}
-
-.colorWhite {
-    background-color: #ffffff;
-}
-
-
-    
-    /*          Main            */
-
-.gridenTwo {
-    display: inline-grid;
+.mainGrid {
+    display: grid;
     text-align: center;
 }
-
-.top {
+.mainTop {
     align-items: center;
-    padding: 0 0.9em 0 0.9em;
+    padding: 0 0.9em;
 }
-.topheader h2 {
+
+.maniHeader h2 {
     font-size: 45px;
     line-height: 45px;
     text-align: left;
-    color: #ffffff;
 }
-.topheader p {
+.maniHeader p {
     font-size: 14px;
     line-height: 24px;
     text-align: left;
     color: rgba(0, 0, 0, 0.6);
 }
-
-.container {
+.mainPeople {
+    display: grid;
+    justify-content: center;
+}
+.mainPeopleFig{
     max-width: 240px;
     min-width: 210px;
     border-radius: 5px;
     margin: 15px;
 }
-
-.figurer {
-    display: grid;
-    justify-content: center;
-}
-    
-.figurer img {
+.mainPeopleFig img {
     box-sizing: border-box;
     width: 200px;
     height: 140px;
@@ -232,7 +165,7 @@ background-color: #F17949;
     margin-top: -15px;
     padding: 0 26% 0 26%;
     object-fit: cover;
-    object-position: 0px 30px;    
+    object-position: 0px 30px; 
 }
 figcaption h3{
     font-size: 16px;
@@ -244,128 +177,247 @@ figcaption p{
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
 }
-.aboutText h2 {
+.mainAbout{
+    padding: 0 0.9em;;
+}
+.mainAboutText h2 {
     font-size: 45px;
     line-height: 45px;
-    color: #ffffff;
 }
-.aboutText p{
+.mainAboutText p{
     font-size: 14px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.listwrap{
+.mainList{
     display: grid;
     align-self: stretch;
 }
-.list {
+.mainListBox {
     min-height: 170px;
 }
-.list h2 {
+.mainListBox h2 {
     font-size: 45px;
     color: rgba(0, 0, 0, 0.8);
 }
-.list h3 {
+.mainListBox h3 {
     margin: 35px 0 0 35px;
     font-size: 35px;
     line-height: 35px;
     text-align: left;
     color: rgba(0, 0, 0, 0.4);
 }
-.list p {
+.mainListBox p {
     font-size: 17px;
     color: rgba(0, 0, 0, 0.7);
 }
-.hidden {
-    display: none;
+
+/*Footer*/
+.footerUp {
+    text-align: center;
+}
+.footerUp div {
+    justify-content: center;
+}
+.footerUp a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: rgba(0,0,0,0.7);
+}
+.footerGrey {
+    background-color: #777574;
+    height: 300px;
+}
+
+/*Kontakt Sida*/
+.contactHeader { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactHeader h1 {
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    padding: 30px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact h2 {
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+.formclass{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], label, textarea {
+    margin-bottom: 16px;
+}
+.email{
+    width: 300px;
+    height: 30px;
+}
+.message1 {
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    width: 300px;
+    height: 170px;
+}
+form .button {
+    align-self: flex-end;
+}
+.where {
+    display: flex;
+    justify-content: center;
+    background-image: url("map.png");
+    height: 407px;
+}
+.mapcontainer {
+    margin: 80px;
+}
+
+.yellowCanvas {
+    width: 350px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px 0px 10px;
+    height: 200px;
+}
+
+.map {
+    width: 100%;
+    object-fit: cover;
 }
 
 
-@media only screen and (min-width: 768px){
-    .griden{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+@media only screen and (min-width: 768px) {
 
-    .blueSky {
-        grid-column: 1;
-        grid-row: 1/span 2;
-         
+    .wrapper {
+        width: 92%;
+        margin: auto; 
     }
-    .red {
-        grid-column:  2;
-        grid-row: span 1;
-        height: unset;
-    }
-
-    .yellow {
-        grid-column: 2;
-        grid-row: 2;
-        height: unset;
-    }
-
-    nav  {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .lightGrey{
-        
-        background-color:#A9A19E;
-        text-align: center;
-        display: block;
-
-    }
-
-    /*Main*/
-    .gridenTwo {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
-    }
-
     .hidden {
         display: unset;
     }
 
-    .top {
+    .headerGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .headerBlue {
+        grid-column: 1;
+        grid-row: 1/span 2;  
+    }
+    .headerBox {
+        grid-column:  2;
+        grid-row: span 1;
+        height: unset;
+    }
+    nav  {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /*Main*/
+
+    .mainGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+    }
+
+    .mainTop {
         grid-column: 1 / span 2;
         grid-row: 1/ span 2;
         display: grid;
-        grid-template-columns: 0.5fr 40% 40%.0.5fr;
+        grid-template-columns: 0.3fr 1fr 1fr.0.3fr;
         grid-template-rows: 1fr 0.5fr;
+        grid-gap: 2%;
         text-align: start;
     }
-    .topheader
-    {
+    .maniHeader {
         grid-column: 2/3;
     }
-    .top p {
+    .mainTop p {
         grid-column: 3/4;
     }
-    .figurer {
+    .mainPeople {
         grid-column: 1/ span 2;
         grid-row: 2/ 4;
         z-index: 2;
         background-color: unset;
         grid-auto-flow: column;
     }
-    .about {
+    .mainAbout{
         grid-column: 1/ span 2;
-        grid-row: 3/ span 4;
+        grid-row: 3/ span 2;
         display: grid;
-        grid-template-columns: 0.5fr 50%.0.5fr;
-        grid-template-rows: 20% 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        justify-content: center;
+        align-content: end;
     }
-    .aboutText {
-        grid-column: 2;
+    .mainAboutText {
         grid-row: 2;
+        place-self: center;
+        max-width: 600px;
+        height: 280px;
     }
-
-    .listwrap {
+    .mainList {
         grid-column: 1/ span 2;
         grid-row: 5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    /*Footer*/
+    .footerUp {
+        text-align: center;
+        display: block;
+    }
+
+    /*  Kontakt Sida  */
+
+    .contactHeader {   
+    justify-content: flex-end;
+    flex-direction: row; 
+    }
+  
+    .manchild {
+        margin: 30px 0px 0px 0px;
+        padding: 0px 200px 0px 150px;
+    }
+    .contact {
+        flex-direction: row;
+        height: 550px;    
+        justify-content: space-around;
+    }
+
+    .where {
+        justify-content:flex-start;
+    }
+    .svg {
+        margin:  120px 400px 120px 10px;
+        width: 60%;
+    }
+    .yellowCanvas {
+        height: 350px;
+    }
+
+    .mapcontainer {
+        margin: 30px;
+    }
+
+
+
+    
 }

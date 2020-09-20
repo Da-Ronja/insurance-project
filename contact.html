@@ -3,54 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Contact</title>
 </head>
-<body class="wrapper">
-    <header>
-        
-        <h1 class="headline"> Oh hello there! </h1>
-         <img class="manchild" src="man.png" alt="man&child"> 
-  
+<body>
+    <div class="wrapper">
+        <header class="contactHeader cBlue">
+            
+            <h1> Oh hello there! </h1>
+            <img class="manchild" src="man.png" alt="man&child"> 
     
-    </header>
-    <main>
-        <article class="contact">
+        
+        </header>
+        <nav hidden>
+            <a href="index.html">Home</a>
+            <a href="#">Our offer</a>
+            <a href="#">Why us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main>
+            <article class="contact cDarkGrey">
+                <h2 class="pW">What's on your mind</h2>
 
-            <h2>What's on your mind</h2>
-            
-                <form class="formclass" action="/action_page.php">
-                    <label for="email"> <p> Your email </p>  </label><br>
-                    <input type="text" class="email" name="email"> <br>
-                    <label for="message"> <p> Your message </p>  </label><br>
-                    <input type="text" class="message1" name="message" value="Dear Insurance company..."><br>
+                <form class="formclass" action="action_page.php">
+
+                    <label class="pW" for="email">Your email</label>
+                    <input type="text" class="email" name="email">
+                
+                    <label class="pW" for="message">Your message</label>
+                    <textarea class="message1" name="message" placeholder="Dear Insurance company..."></textarea>
+                
                     <input type="submit" class="button" value="SEND MESSAGE">
-                  </form> 
-          
-           
-        </article>
-        <section class="where">
-             
+                </form>
+
             
+            
+            </article>
+            <section class="where">
+                
+                
             <section class="mapcontainer">
-             <div class="yellowbox">
-              
-                <h2>Come and visit us!</h2>
-                <p>2219 Griffin Street <br>
-                  San Francisco</p>
+                <div class="yellowCanvas cYellow pW">
+                    <h2>Come and visit us!</h2>
+                    <p>2219 Griffin Street <br>
+                    San Francisco</p>
                 </div>
-        </section>  
+            </section>  
 
-            <svg class="svg"width="70" height="112" viewBox="0 0 70 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M35 0C15.6715 0 0 15.668 0 35C0 40.4141 1.23047 45.5479 3.42825 50.1211C3.55119 50.381 35 112 35 112L66.1924 50.8867C68.626 46.1221 70 40.7216 70 35C70 15.668 54.332 0 35 0ZM35 56C23.4028 56 14 46.5938 14 35C14 23.4062 23.4028 14 35 14C46.5938 14 56 23.4062 56 35C56 46.5938 46.5938 56 35 56Z" fill="#F17949"/>
-                </svg>
-           
+                <svg class="svg"width="70" height="112" viewBox="0 0 70 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35 0C15.6715 0 0 15.668 0 35C0 40.4141 1.23047 45.5479 3.42825 50.1211C3.55119 50.381 35 112 35 112L66.1924 50.8867C68.626 46.1221 70 40.7216 70 35C70 15.668 54.332 0 35 0ZM35 56C23.4028 56 14 46.5938 14 35C14 23.4062 23.4028 14 35 14C46.5938 14 56 23.4062 56 35C56 46.5938 46.5938 56 35 56Z" fill="#F17949"/>
+                    </svg>
+            
 
-        </section>
-    </main>
-    <footer>
-        <section class="darkGrey">
-        </section>
-    </footer>
+            </section>
+        </main>
+        <footer>
+            <section class="footerGrey">
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
